@@ -1,0 +1,13 @@
+.footer {
+  box-shadow: var(--box-shadow);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-size: 40px;
+  color: var(--c-accent);
+}

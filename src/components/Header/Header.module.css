@@ -1,0 +1,16 @@
+.header {
+  min-height: 70px;
+  box-shadow: var(--box-shadow);
+}
+
+.inner {
+  min-height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 40px;
+  color: var(--c-accent);
+}

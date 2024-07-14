@@ -1,0 +1,23 @@
+:root {
+  /* Цвета */
+  --c-dark: #191820;
+  --c-dark-for-shadow: black;
+  --c-accent: #ae8bf8;
+  --c-white: #fff;
+  --c-light: #ececec;
+
+  /* Шрифт */
+  --base-font-family: "IBMPM", sans-serif;
+
+  /* Тени / Анимации */
+  --box-shadow: -4px -4px 12px hsla(0, 0%, 100%, 0.05),
+    4px 4px 12px var(--c-dark-for-shadow);
+  --transition-duration: 0.2s easy-in;
+
+  /* Кнопка */
+  --button-height: 60px;
+
+  /* Контейнер */
+  --container-width: 1280px;
+  --container-padding: 15px;
+}
