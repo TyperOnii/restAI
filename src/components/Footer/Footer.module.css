@@ -1,5 +1,7 @@
 .footer {
   box-shadow: var(--box-shadow);
+  background-color: var(--c-dark);
+  color: var(--c-light);
 }
 
 .inner {
