@@ -1,9 +1,9 @@
 import logo from "../../../public/rest-img.jpg";
-import classes from "./ActiveTab.module.css";
+import classes from "./Restaurant.module.css";
 import Menu from "../Menu/Menu";
 import Reviews from "../Reviews/Reviews";
 
-export default function ActiveTab({ rest }) {
+export default function Restaurant({ rest }) {
   return (
     <article className={classes.card}>
       <div className={classes.inner}>

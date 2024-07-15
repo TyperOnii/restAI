@@ -23,9 +23,6 @@
   color: var(--c-dark);
   background-color: var(--c-light);
 }
-.price {
-}
-
 .ingredients {
   max-width: 400px;
 }

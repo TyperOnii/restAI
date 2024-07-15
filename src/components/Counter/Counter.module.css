@@ -1,6 +1,3 @@
-.counterItem {
-}
-
 .inner {
   display: flex;
   flex-direction: column;
@@ -10,7 +7,6 @@
 .counter {
   text-align: center;
 }
-
 .actions {
   display: flex;
   gap: 5px;

@@ -1,12 +1,12 @@
 import { useState } from "react";
 import Tab from "../Tab/Tab";
 import classes from "./TabsSection.module.css";
-import ActiveTab from "../ActiveTab/ActiveTab";
+import Restaurant from "../Restaurant/Restaurant";
 
 export default function TabsSection({ rests }) {
-  const [currentTab, setCurrentTab] = useState(rests[0]);
-  const changeTabHandler = (tab) => {
-    setCurrentTab(tab);
+  const [activeRest, setActiveRest] = useState(rests[0]);
+  const changeTabHandler = (id) => {
+    setActiveRest(rests.find((rest) => rest.id === id));
   };
 
   return (
@@ -16,13 +16,14 @@ export default function TabsSection({ rests }) {
           {rests.map((rest) => (
             <Tab
               key={rest.id}
-              rest={rest}
+              id={rest.id}
+              text={rest.name}
               changeTabHandler={changeTabHandler}
             />
           ))}
         </div>
         <div className={classes.activeTab}>
-          <ActiveTab rest={currentTab} />
+          <Restaurant rest={activeRest} />
         </div>
       </div>
     </section>

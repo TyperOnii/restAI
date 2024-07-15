@@ -3,26 +3,16 @@
   padding: 15px;
   border-radius: 10px;
 }
-
 .inner {
   display: flex;
   gap: 50px;
 }
-
 .image {
   border-radius: 10px;
 }
-
-.mainInfo {
-}
-
 .title {
   font-size: 45px;
 }
-
-.secondaryInfo {
-}
-
 .category {
   color: var(--c-light);
   font-weight: 600;
