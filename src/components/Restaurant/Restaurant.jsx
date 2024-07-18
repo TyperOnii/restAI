@@ -29,6 +29,7 @@ export default function Restaurant({ rest }) {
             <h2 className={classes.category}>Reviews</h2>
             {/* В СТРОЧКЕ НИЖЕ ОШИБКА --------------------------------------- */}
             {rest.reviews && <Reviews restReviews={restReviewsState} />}
+            {/* {rest.reviews && <Reviews restReviews={rest.reviews} />} */}
           </div>
           <div>
             <h2 className={classes.category}>Write your review</h2>
