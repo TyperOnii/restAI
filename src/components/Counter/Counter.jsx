@@ -1,15 +1,7 @@
-import { useState } from "react";
 import Button from "../Button/Button";
 import classes from "./Counter.module.css";
 
-export default function Counter({}) {
-  const [value, setValue] = useState(0);
-  const decrement = () => {
-    value > 0 ? setValue(value - 1) : undefined;
-  };
-  const encrement = () => {
-    value < 5 ? setValue(value + 1) : undefined;
-  };
+export default function Counter({ value, increment, decrement }) {
   return (
     <div className={classes.counterItem}>
       <div className={classes.inner}>
@@ -18,7 +10,7 @@ export default function Counter({}) {
           <Button onClick={decrement} styles="counter">
             -
           </Button>
-          <Button onClick={encrement} styles="counter">
+          <Button onClick={increment} styles="counter">
             +
           </Button>
         </div>

@@ -24,3 +24,13 @@
   height: 35px;
   padding-inline: 10px;
 }
+
+.disabled {
+  background-color: rgb(69, 69, 69);
+  color: rgb(151, 151, 151);
+}
+
+.disabled:hover {
+  color: var(--c-dark);
+  border: 1px solid var(--c-dark);
+}

@@ -24,6 +24,7 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  color: var(--c-light);
   background-color: var(--c-accent);
   width: 40px;
   aspect-ratio: 1;
