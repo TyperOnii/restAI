@@ -1,0 +1,13 @@
+.section {
+  margin-top: 30px;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.tabs {
+  display: flex;
+  gap: 15px;
+}

@@ -1,0 +1,13 @@
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.counter {
+  text-align: center;
+}
+.actions {
+  display: flex;
+  gap: 5px;
+}

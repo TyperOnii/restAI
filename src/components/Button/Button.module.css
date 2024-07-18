@@ -1,0 +1,36 @@
+.default {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--button-height);
+  padding-inline: 15px;
+  border-radius: 12px;
+  background-color: var(--c-light);
+  color: var(--c-dark);
+  border: 1px solid black;
+}
+
+.default:hover {
+  color: var(--c-accent);
+  border: 1px solid var(--c-accent);
+}
+
+.default:active {
+  color: var(--c-light);
+  background-color: var(--c-accent);
+}
+
+.counter {
+  height: 35px;
+  padding-inline: 10px;
+}
+
+.disabled {
+  background-color: rgb(69, 69, 69);
+  color: rgb(151, 151, 151);
+}
+
+.disabled:hover {
+  color: var(--c-dark);
+  border: 1px solid var(--c-dark);
+}

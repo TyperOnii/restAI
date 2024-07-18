@@ -1,8 +1,11 @@
 :root {
   /* Цвета */
   --c-dark: #191820;
-  --c-dark-for-shadow: black;
-  --c-accent: #ae8bf8;
+  --c-dark-for-card: #c0c0c0;
+  --c-black: black;
+  --c-dark-for-shadow: rgb(89, 89, 89);
+  /* --c-accent: #ae8bf8; */
+  --c-accent: #ee4646;
   --c-white: #fff;
   --c-light: #ececec;
 
@@ -12,12 +15,14 @@
   /* Тени / Анимации */
   --box-shadow: -4px -4px 12px hsla(0, 0%, 100%, 0.05),
     4px 4px 12px var(--c-dark-for-shadow);
-  --transition-duration: 0.2s easy-in;
+  --transition-duration: 0.2s;
 
   /* Кнопка */
-  --button-height: 60px;
+  --button-height: 50px;
 
   /* Контейнер */
   --container-width: 1280px;
   --container-padding: 15px;
+
+  --border-for-card: 2px solid #8b8a8d;
 }

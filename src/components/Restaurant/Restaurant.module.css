@@ -1,0 +1,22 @@
+.card {
+  background-color: var(--c-dark-for-card);
+  padding: 15px;
+  border-radius: 10px;
+}
+.inner {
+  display: flex;
+  gap: 50px;
+}
+.image {
+  border-radius: 10px;
+}
+.title {
+  font-size: 45px;
+}
+.category {
+  color: var(--c-light);
+  font-weight: 600;
+  text-align: center;
+  border-radius: 10px;
+  background-color: var(--c-accent);
+}

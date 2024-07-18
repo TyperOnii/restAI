@@ -1,13 +1,14 @@
 import { useState } from "react";
-import Header from "./components/Header/Header";
+import { restaurants } from "./data";
 import "./App.css";
 import Layout from "./components/Layout/Layout";
+import TabsSection from "./components/TabsSection/TabsSection";
 
 function App() {
   return (
-    <>
-      <Layout>123</Layout>
-    </>
+    <Layout>
+      <TabsSection rests={restaurants} />
+    </Layout>
   );
 }
 
