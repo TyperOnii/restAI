@@ -1,14 +1,18 @@
-import { useState } from "react";
 import { restaurants } from "./data";
-import "./App.css";
 import Layout from "./components/Layout/Layout";
 import TabsSection from "./components/TabsSection/TabsSection";
+import ThemeContextProvider from "./components/ThemeContextProvider/ThemeContextProvider";
+import AuthorizationContextProvider from "./components/AuthorizationContextProvider/AuthorizationContextProvider";
 
 function App() {
   return (
-    <Layout>
-      <TabsSection rests={restaurants} />
-    </Layout>
+    <ThemeContextProvider>
+      <AuthorizationContextProvider>
+        <Layout>
+          <TabsSection rests={restaurants} />
+        </Layout>
+      </AuthorizationContextProvider>
+    </ThemeContextProvider>
   );
 }
 

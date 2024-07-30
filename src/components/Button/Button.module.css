@@ -24,3 +24,8 @@
   height: 35px;
   padding-inline: 10px;
 }
+
+.dark {
+  background-color: black;
+  color: white;
+}
