@@ -1,6 +1,11 @@
 .header {
   min-height: 70px;
   box-shadow: var(--box-shadow);
+  background-color: var(--c-light);
+  color: var(--c-dark);
+}
+
+.headerDark {
   background-color: var(--c-dark);
   color: var(--c-light);
 }
@@ -8,11 +13,22 @@
 .inner {
   min-height: inherit;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .logo {
   font-size: 40px;
   color: var(--c-accent);
+}
+
+.innerLogo {
+  display: flex;
+  align-items: center;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }

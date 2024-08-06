@@ -25,6 +25,10 @@
   padding-inline: 10px;
 }
 
+
+.dark {
+  background-color: black;
+  color: white;
 .disabled {
   background-color: rgb(69, 69, 69);
   color: rgb(151, 151, 151);
