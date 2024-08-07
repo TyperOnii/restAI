@@ -4,7 +4,7 @@ import TabsSection from "./components/TabsSection/TabsSection";
 import ThemeContextProvider from "./components/ThemeContextProvider/ThemeContextProvider";
 import AuthorizationContextProvider from "./components/AuthorizationContextProvider/AuthorizationContextProvider";
 
-function App() {
+export default function App() {
   return (
     <ThemeContextProvider>
       <AuthorizationContextProvider>
@@ -15,5 +15,3 @@ function App() {
     </ThemeContextProvider>
   );
 }
-
-export default App;

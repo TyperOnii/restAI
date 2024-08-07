@@ -11,7 +11,7 @@ export default function AuthorizationContextProvider({ children }) {
     setLoginState((currentState) =>
       currentState.isLogin === false
         ? { ...currentState, isLogin: true }
-        : { ...currentState, isLogin: false }
+        : { name: "", isLogin: false }
     );
   }, []);
 
