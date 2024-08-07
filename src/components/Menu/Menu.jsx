@@ -1,12 +1,12 @@
 import classes from "./Menu.module.css";
-import MenuItem from "../MenuItem/MenuItem";
+import MenuItemReceiver from "../MenuItem/MenuItemReceiver";
 
-export default function Menu({ restMenu }) {
+export default function Menu({ ids }) {
   return (
     <div className={classes.cards}>
       <div className={classes.inner}>
-        {restMenu.map((menu) => (
-          <MenuItem key={menu.id} {...menu} />
+        {ids.map((id) => (
+          <MenuItemReceiver key={id} id={id} />
         ))}
       </div>
     </div>

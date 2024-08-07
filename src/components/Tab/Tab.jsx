@@ -1,6 +1,6 @@
 import Button from "../Button/Button";
 import classes from "./Tab.module.css";
 
-export default function Tab({ changeTabHandler, id, text }) {
-  return <Button onClick={() => changeTabHandler(id)}>{text}</Button>;
+export default function Tab({ text, onClick, id }) {
+  return <Button onClick={() => onClick(id)}>{text}</Button>;
 }

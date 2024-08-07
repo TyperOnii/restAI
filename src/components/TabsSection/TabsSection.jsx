@@ -1,29 +1,21 @@
 import { useState } from "react";
-import Tab from "../Tab/Tab";
 import classes from "./TabsSection.module.css";
-import Restaurant from "../Restaurant/Restaurant";
+import TabReceiver from "../Tab/TabReceiver";
+import RestaurantReceiver from "../Restaurant/RestaurantReceiver";
+import Tabs from "../Tabs/Tabs";
 
-export default function TabsSection({ rests }) {
-  const [activeRest, setActiveRest] = useState(rests[0]);
-  const changeTabHandler = (id) => {
-    setActiveRest(rests.find((rest) => rest.id === id));
-  };
+export default function TabsSection({ restsIds }) {
+  const [activeRestId, setActiveRestId] = useState(restsIds[0]);
+  const activeRestChanger = (id) => setActiveRestId(id);
 
   return (
     <section className={classes.section}>
       <div className={[classes.inner, "container"].join(" ")}>
         <div className={classes.tabs}>
-          {rests.map((rest) => (
-            <Tab
-              key={rest.id}
-              id={rest.id}
-              text={rest.name}
-              changeTabHandler={changeTabHandler}
-            />
-          ))}
+          <Tabs ids={restsIds} changer={activeRestChanger} />
         </div>
         <div className={classes.activeTab}>
-          <Restaurant rest={activeRest} />
+          <RestaurantReceiver restId={activeRestId} />
         </div>
       </div>
     </section>

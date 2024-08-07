@@ -1,17 +1,22 @@
 import { restaurants } from "./data";
 import Layout from "./components/Layout/Layout";
 import TabsSection from "./components/TabsSection/TabsSection";
-import ThemeContextProvider from "./components/ThemeContextProvider/ThemeContextProvider";
 import AuthorizationContextProvider from "./components/AuthorizationContextProvider/AuthorizationContextProvider";
+import ThemeContextProvider from "./components/ThemeContextProvider/ThemeContextProvider";
+import { Provider } from "react-redux";
+import { store } from "./Redux/store";
+import TabsSectionReceiver from "./components/TabsSection/TabsSectionReceiver";
 
 export default function App() {
   return (
-    <ThemeContextProvider>
-      <AuthorizationContextProvider>
-        <Layout>
-          <TabsSection rests={restaurants} />
-        </Layout>
-      </AuthorizationContextProvider>
-    </ThemeContextProvider>
+    <Provider store={store}>
+      <ThemeContextProvider>
+        <AuthorizationContextProvider>
+          <Layout>
+            <TabsSectionReceiver />
+          </Layout>
+        </AuthorizationContextProvider>
+      </ThemeContextProvider>
+    </Provider>
   );
 }

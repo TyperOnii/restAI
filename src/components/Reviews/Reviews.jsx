@@ -1,12 +1,12 @@
 import classes from "./Reviews.module.css";
-import Review from "../Review/Review";
+import ReviewReceiver from "../Review/ReviewReceiver";
 
-export default function Reviews({ restReviews }) {
+export default function Reviews({ ids }) {
   return (
     <div className={classes.cards}>
       <div className={classes.inner}>
-        {restReviews.map((review) => (
-          <Review key={review.id} {...review} />
+        {ids.map((id) => (
+          <ReviewReceiver key={id} id={id} />
         ))}
       </div>
     </div>

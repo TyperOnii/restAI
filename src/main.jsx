@@ -7,8 +7,4 @@ import "../src/settings/vars.css";
 import "../src/settings/global.css";
 import "../src/settings/utils.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+ReactDOM.createRoot(document.getElementById("root")).render(<App />);
